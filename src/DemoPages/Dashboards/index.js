@@ -15,15 +15,36 @@ import MinimalDashboard2 from "./Minimal/Variation2";
 import AppHeader from "../../Layout/AppHeader/";
 import AppSidebar from "../../Layout/AppSidebar/";
 import AppFooter from "../../Layout/AppFooter/";
+import { Col, Row, Button, Form, FormGroup, Label, Input } from "reactstrap";
 
 // Theme Options
-import ThemeOptions from "../../Layout/ThemeOptions/";
+//import ThemeOptions from "../../Layout/ThemeOptions/";
 
 const Dashboards = ({ match }) => (
   <Fragment>
-    <ThemeOptions />
     <AppHeader />
-    <div className="app-main">
+	<Row className="no-gutters inner-menu">		  
+	  <nav className="navbar navbar-expand-lg navbar-dark bg-dark w-100">
+		  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span className="navbar-toggler-icon"></span>
+		  </button>
+		  <div className="collapse navbar-collapse" id="navbarNav">
+			<ul className="navbar-nav ml-auto">
+			  <li className="nav-item active">
+				<a className="nav-link" href="#">The Platform</a>
+			  </li>
+			  <li className="nav-item">
+				<a className="nav-link" href="#">Plan</a>
+			  </li> 
+			  <li className="nav-item">
+				<a className="nav-link" href="#">Support</a>
+			  </li>
+			</ul>
+		  </div>
+		</nav>
+	</Row>
+    <div className="app-main">	
+	
       <AppSidebar />
       <div className="app-main__outer">
         <div className="app-main__inner">

@@ -1,5 +1,65 @@
 export const MainNav = [
   {
+    icon: "pe-7s-door-lock",
+    label: "Rooms",
+    content: [
+      {
+        label: "Negotiation Rooms",
+        content: [
+          {
+            label: "Negotiation 1",
+            to: "#/forms/wizard-1",
+          },
+          {
+            label: "Negotiation 2",
+            to: "#/forms/wizard-2",
+          }
+        ],
+      },
+      {
+        label: "Project Rooms",
+        content: [
+          {
+            label: "Project 1",
+            to: "#/forms/wizard-1",
+          },
+          {
+            label: "Project 2",
+            to: "#/forms/wizard-2",
+          }
+        ],
+      },{
+        label: "Event Rooms",
+        content: [
+          {
+            label: "Event 1",
+            to: "#/forms/wizard-1",
+          },
+          {
+            label: "Event 2",
+            to: "#/forms/wizard-2",
+          }
+        ],
+      },
+    ],
+  },
+  {
+    icon: "pe-7s-id",
+    label: "Contracts",
+    content: [
+      {
+        label: "Contract 1",
+        to: "#/forms/datepicker",
+      },
+      {
+        label: "Contract 2",
+        to: "#/forms/range-slider",
+      },
+    ],
+  },
+];
+export const MainNav_1 = [
+  {
     icon: "pe-7s-rocket",
     label: "Dashboards",
     content: [

@@ -42,7 +42,7 @@ class Header extends React.Component {
               <UserBox />
               <HeaderRightDrawer />
             </div>
-          </div>
+          </div>		  
         </CSSTransitionGroup>
       </Fragment>
     );
