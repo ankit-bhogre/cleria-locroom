@@ -4,10 +4,10 @@ import ReactDOM from "react-dom";
 
 import * as serviceWorker from "./serviceWorker";
 
-import { HashRouter } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import "./assets/base.scss";
 import Main from "./DemoPages/Main";
-//import Login from "./DemoPages/UserPages/Login";
+//import Login from "./Components/Login";
 import configureStore from "./config/configureStore";
 import { Provider } from "react-redux";
 
@@ -17,9 +17,9 @@ const rootElement = document.getElementById("root");
 const renderApp = (Component) => {
   ReactDOM.render(
     <Provider store={store}>
-      <HashRouter>
+      <BrowserRouter>
         <Component />
-      </HashRouter>
+      </BrowserRouter>
     </Provider>,
     rootElement
   );
@@ -27,10 +27,10 @@ const renderApp = (Component) => {
 
 renderApp(Main);
 
-if (module.hot) {
+/*if (module.hot) {
   module.hot.accept("./DemoPages/Main", () => {
     const NextApp = require("./DemoPages/Main").default;
     renderApp(NextApp);
   });
 }
-serviceWorker.unregister();
+serviceWorker.unregister();*/
